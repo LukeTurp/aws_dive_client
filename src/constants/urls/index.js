@@ -1,0 +1,1 @@
+export const submitEndpoint = 'https://register.thesandboxenv.com';
