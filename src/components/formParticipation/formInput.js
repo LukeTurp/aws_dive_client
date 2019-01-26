@@ -11,7 +11,6 @@ export default class FormInput extends PureComponent {
 
     onChange = event => {
         let eventTarget = event.target;
-        console.log( eventTarget.name, eventTarget.value)
         let foundError = (this.props.errorCheck) ? this.props.errorCheck(eventTarget.value) : true;
         if (foundError) {
             this.props.onParentChange(eventTarget.name, eventTarget.value)

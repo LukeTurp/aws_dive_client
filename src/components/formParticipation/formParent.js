@@ -11,6 +11,10 @@ export default class FormParent extends Component {
     submitUser = userObj => () => {
         fetch(submitEndpoint + '/register/new-user', {
             method: 'post',
+            mode: 'cors',
+            headers: {
+                "Content-Type": "application/json",
+            },
             body: JSON.stringify(userObj)
         }).then( resp => console.log(resp)
         ).catch( err => console.log(err))

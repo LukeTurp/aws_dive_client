@@ -1,1 +1,1 @@
-export const submitEndpoint = 'https://register.thesandboxenv.com/register/new-user';
+export const submitEndpoint = 'https://register.thesandboxenv.com';
